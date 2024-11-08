@@ -1,0 +1,225 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v21-latin_latin-ext-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v21-latin_latin-ext-700.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-wrapper {
+  user-select: none;
+  display: flex;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+}
+.left {
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-content {
+  width: 364px;
+  text-align: center;
+}
+.left-content h2 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.left-content p {
+  color: rgb(82, 82, 82);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 16px;
+  background: rgba(240, 237, 255, 0.8);
+  padding: 15px 0 15px 21px;
+}
+.input-box:first-child {
+  margin-bottom: 18px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(28, 28, 28);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  width: 80%;
+}
+::placeholder {
+  color: rgb(28, 28, 28);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+.login-btn {
+  padding: 17px 30px;
+  border-radius: 16px;
+  background: linear-gradient(
+    134.25deg,
+    rgb(145, 129, 244) -5.847%,
+    rgb(80, 56, 237) 109.546%
+  );
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+.login-others {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #525252;
+  margin-bottom: 24px;
+}
+.login-others:before,
+.login-others:after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 0 8px;
+}
+.login-span {
+  color: #000;
+  font-weight: bold;
+}
+.google-btn {
+  margin-bottom: 16px;
+}
+.google-btn,
+.facebook-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(28, 28, 28);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  box-sizing: border-box;
+  border: 1px solid rgb(240, 237, 255);
+  border-radius: 16px;
+  justify-content: center;
+  padding: 11px 0;
+}
+span {
+  font-weight: bold;
+  color: #000;
+}
+.right {
+  width: 100%;
+  background-image: url("../images/right-bg.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-block {
+  width: 413px;
+  height: 524px;
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  border-radius: 46px;
+  backdrop-filter: blur(13.6px);
+  background: rgba(255, 255, 255, 0.21);
+  padding: 26px 0 0 31px;
+  position: relative;
+}
+.right-block h2 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  width: 184px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0%;
+}
+.right-block img {
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+}
+
+.main-hidden {
+  display: none;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 30px auto;
+}
+.main-hidden h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main-hidden p {
+  margin-bottom: 20px;
+}
+.exit {
+  text-align: right;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 1025px) {
+  .right {
+    display: none;
+  }
+}
