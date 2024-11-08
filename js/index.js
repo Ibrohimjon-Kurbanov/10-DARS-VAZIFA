@@ -31,7 +31,10 @@ loginBtn &&
     if (!isExist) {
       return false;
     }
-    if (username.value == adminLogin && password.value == adminPassword) {
+    if (
+      username.value.trim() == adminLogin &&
+      password.value == adminPassword
+    ) {
       mainWrapper.style.display = "none";
       mainHidden.style.display = "block";
 
